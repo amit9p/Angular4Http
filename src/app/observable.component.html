@@ -1,0 +1,12 @@
+
+<h3>Bot Details with Observable</h3>
+<ul>
+  <li *ngFor="let bot of observableBot | async" >
+    Id: {{bot.bot_reply}}
+  </li>
+</ul>
+
+
+
+<div *ngIf="errorMessage"> {{errorMessage}} </div>
+
